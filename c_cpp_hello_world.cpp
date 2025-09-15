@@ -9,3 +9,10 @@ int main() {
 int sum(int a, int b) {
 	return a + b;
 }
+
+// Умножение
+int mult(int a, int b) {
+        return a * b;
+}
+
+
