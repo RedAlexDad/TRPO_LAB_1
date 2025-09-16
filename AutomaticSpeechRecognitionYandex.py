@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+@file AutomaticSpeechRecognitionYandex.py
+@brief Реализация системы автоматического распознавания речи с использованием Yandex SpeechKit.
+@details Этот файл содержит класс AutomaticSpeechRecognitionYandex для распознавания речи из аудиофайлов.
+@see https://cloud.yandex.com/en/docs/speechkit/stt/
+"""
+
 import os
 import io
 import json
@@ -11,7 +21,19 @@ import soundfile as sf
 from pydub import AudioSegment
 
 class AutomaticSpeechRecognitionYandex:
+    """
+    @class AutomaticSpeechRecognitionYandex
+    @brief Класс для автоматического распознавания речи с использованием Yandex SpeechKit.
+    @details Этот класс предоставляет методы для определения формата аудио, конвертации аудиоданных и распознавания речи через API Yandex.
+    """
     def __init__(self, folder_id:str, iam_token:str=None, service_secret_key:str=None):
+        """
+        @brief Инициализация объекта класса AutomaticSpeechRecognitionYandex.
+        @param folder_id Идентификатор папки в Yandex Cloud.
+        @param iam_token Токен IAM для аутентификации (опционально).
+        @param service_secret_key Секретный ключ сервиса (опционально, используется, если iam_token не передан).
+        @exception ValueError Вызывается, если переданы оба или ни один из iam_token и service_secret_key.
+        """
         self.folder_id = folder_id
            
         # Проверяем взаимоисключающие условия для iam_token и oauth_token
@@ -26,9 +48,10 @@ class AutomaticSpeechRecognitionYandex:
             
     def detect_audio_format_by_name(self, audio_data):
         """
-        Определение формата аудиофайла по имени файла.
-        :param audio_data: Объект с атрибутом name или строка с именем файла.
-        :return: Строка с форматом файла (например, "wav", "mp3", "ogg").
+        @brief Определение формата аудиофайла по имени файла.
+        @param audio_data Объект с атрибутом name или строка с именем файла.
+        @return Строка с форматом файла (например, "wav", "mp3", "ogg").
+        @exception ValueError Вызывается, если формат файла не поддерживается или имя файла не определено.
         """
         if hasattr(audio_data, 'name'):
             file_name = audio_data.name
@@ -49,9 +72,10 @@ class AutomaticSpeechRecognitionYandex:
     
     def detect_audio_format(self, file_content):
         """
-        Определение формата аудиофайла по заголовкам.
-        :param file_content: Байты файла.
-        :return: Строка с форматом файла (например, "wav", "mp3", "ogg", "webm").
+        @brief Определение формата аудиофайла по заголовкам.
+        @param file_content Байты файла.
+        @return Строка с форматом файла (например, "wav", "mp3", "ogg", "webm").
+        @exception ValueError Вызывается, если формат аудио не поддерживается.
         """
         # Словарь с шаблонами заголовков
         format_signatures = {
@@ -70,6 +94,12 @@ class AutomaticSpeechRecognitionYandex:
         raise ValueError("Unsupported audio format")
 
     def convert_audio_to_bytes(self, audio_data):
+        """
+        @brief Конвертация аудиоданных в формат OggOpus.
+        @param audio_data Аудиоданные (объект файла или байты).
+        @return Байты аудиофайла в формате OggOpus.
+        @exception RuntimeError Вызывается при ошибке обработки или конвертации аудиоданных.
+        """
         # Если передан объект InMemoryUploadedFile, читаем его
         if hasattr(audio_data, 'seek'):
             audio_data.seek(0)  # Перемещаем указатель в начало файла
@@ -104,6 +134,14 @@ class AutomaticSpeechRecognitionYandex:
         return output_buffer.getvalue()
       
     def recognize_speech_audio_data(self, audio_data:any, lang:str='ru-RU', topic:str='general', print_result:bool=True):
+        """
+        @brief Распознавание речи из аудиоданных через Yandex SpeechKit.
+        @param audio_data Аудиоданные для распознавания.
+        @param lang Язык распознавания (по умолчанию 'ru-RU').
+        @param topic Тема распознавания (по умолчанию 'general').
+        @param print_result Флаг для вывода результата в консоль.
+        @return Строка с распознанным текстом или сообщение об ошибке.
+        """
         params = "&".join([
             "topic=%s" % topic,
             "folderId=%s" % self.folder_id,
@@ -147,6 +185,13 @@ class AutomaticSpeechRecognitionYandex:
             return f"Ошибка: {str(error)}"
 
     def recognize_speech_audio_path(self, audio_file_path:str, lang:str='ru-RU', topic:str='general'):
+        """
+        @brief Распознавание речи из аудиофайла по пути.
+        @param audio_file_path Путь к аудиофайлу.
+        @param lang Язык распознавания (по умолчанию 'ru-RU').
+        @param topic Тема распознавания (по умолчанию 'general').
+        @return Строка с распознанным текстом или сообщение об ошибке.
+        """
         with open(audio_file_path, "rb") as f:
             data = f.read()
 
