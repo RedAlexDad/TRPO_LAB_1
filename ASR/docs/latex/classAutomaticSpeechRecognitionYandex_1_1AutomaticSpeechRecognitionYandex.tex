@@ -1,0 +1,153 @@
+\doxysection{Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex Class Reference}
+\hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex}{}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex}\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+
+
+Inheritance diagram for Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a814b5ce41700f28643904e076f8484fb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51}{folder\+\_\+id}}, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11}{iam\+\_\+token}}=None, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693}{service\+\_\+secret\+\_\+key}}=None)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a1dbdc6826167967e928e1d2e32f42cc4}{detect\+\_\+audio\+\_\+format\+\_\+by\+\_\+name}} (self, audio\+\_\+data)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aa692cdf5d45bac69ccce555dc8acb02f}{detect\+\_\+audio\+\_\+format}} (self, file\+\_\+content)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_adaee2d47f6318f4584529b992f4df8be}{convert\+\_\+audio\+\_\+to\+\_\+bytes}} (self, audio\+\_\+data)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a490862388bab0300fe1017eeb4a6aae3}{recognize\+\_\+speech\+\_\+audio\+\_\+data}} (self, any audio\+\_\+data, str lang=\textquotesingle{}ru-\/RU\textquotesingle{}, str topic=\textquotesingle{}general\textquotesingle{}, bool print\+\_\+result=True)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a065579e7d73876689b1206641a5e1173}{recognize\+\_\+speech\+\_\+audio\+\_\+path}} (self, str audio\+\_\+file\+\_\+path, str lang=\textquotesingle{}ru-\/RU\textquotesingle{}, str topic=\textquotesingle{}general\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51}{folder\+\_\+id}}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11}{iam\+\_\+token}}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693}{service\+\_\+secret\+\_\+key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@class AutomaticSpeechRecognitionYandex
+@brief Класс для автоматического распознавания речи с использованием Yandex SpeechKit.
+@details Этот класс предоставляет методы для определения формата аудио, конвертации аудиоданных и распознавания речи через API Yandex.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a814b5ce41700f28643904e076f8484fb}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a814b5ce41700f28643904e076f8484fb} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{folder\+\_\+id,  }\item[{str}]{iam\+\_\+token = {\ttfamily None},  }\item[{str}]{service\+\_\+secret\+\_\+key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Инициализация объекта класса AutomaticSpeechRecognitionYandex.
+@param folder_id Идентификатор папки в Yandex Cloud.
+@param iam_token Токен IAM для аутентификации (опционально).
+@param service_secret_key Секретный ключ сервиса (опционально, используется, если iam_token не передан).
+@exception ValueError Вызывается, если переданы оба или ни один из iam_token и service_secret_key.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a41bc3358af5c551b28ee897e4fdac5a0}{Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_adaee2d47f6318f4584529b992f4df8be}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_adaee2d47f6318f4584529b992f4df8be} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!convert\_audio\_to\_bytes@{convert\_audio\_to\_bytes}}
+\index{convert\_audio\_to\_bytes@{convert\_audio\_to\_bytes}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{convert\_audio\_to\_bytes()}{convert\_audio\_to\_bytes()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+convert\+\_\+audio\+\_\+to\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{audio\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Конвертация аудиоданных в формат OggOpus.
+@param audio_data Аудиоданные (объект файла или байты).
+@return Байты аудиофайла в формате OggOpus.
+@exception RuntimeError Вызывается при ошибке обработки или конвертации аудиоданных.
+\end{DoxyVerb}
+ \Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aa692cdf5d45bac69ccce555dc8acb02f}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aa692cdf5d45bac69ccce555dc8acb02f} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!detect\_audio\_format@{detect\_audio\_format}}
+\index{detect\_audio\_format@{detect\_audio\_format}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{detect\_audio\_format()}{detect\_audio\_format()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+detect\+\_\+audio\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+content }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Определение формата аудиофайла по заголовкам.
+@param file_content Байты файла.
+@return Строка с форматом файла (например, "wav", "mp3", "ogg", "webm").
+@exception ValueError Вызывается, если формат аудио не поддерживается.
+\end{DoxyVerb}
+ \Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a1dbdc6826167967e928e1d2e32f42cc4}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a1dbdc6826167967e928e1d2e32f42cc4} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!detect\_audio\_format\_by\_name@{detect\_audio\_format\_by\_name}}
+\index{detect\_audio\_format\_by\_name@{detect\_audio\_format\_by\_name}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{detect\_audio\_format\_by\_name()}{detect\_audio\_format\_by\_name()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+detect\+\_\+audio\+\_\+format\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{audio\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Определение формата аудиофайла по имени файла.
+@param audio_data Объект с атрибутом name или строка с именем файла.
+@return Строка с форматом файла (например, "wav", "mp3", "ogg").
+@exception ValueError Вызывается, если формат файла не поддерживается или имя файла не определено.
+\end{DoxyVerb}
+ \Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a490862388bab0300fe1017eeb4a6aae3}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a490862388bab0300fe1017eeb4a6aae3} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!recognize\_speech\_audio\_data@{recognize\_speech\_audio\_data}}
+\index{recognize\_speech\_audio\_data@{recognize\_speech\_audio\_data}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{recognize\_speech\_audio\_data()}{recognize\_speech\_audio\_data()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+recognize\+\_\+speech\+\_\+audio\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{any}]{audio\+\_\+data,  }\item[{str}]{lang = {\ttfamily \textquotesingle{}ru-\/RU\textquotesingle{}},  }\item[{str}]{topic = {\ttfamily \textquotesingle{}general\textquotesingle{}},  }\item[{bool}]{print\+\_\+result = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Распознавание речи из аудиоданных через Yandex SpeechKit.
+@param audio_data Аудиоданные для распознавания.
+@param lang Язык распознавания (по умолчанию 'ru-RU').
+@param topic Тема распознавания (по умолчанию 'general').
+@param print_result Флаг для вывода результата в консоль.
+@return Строка с распознанным текстом или сообщение об ошибке.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_af04876025a99ded186249c827c99d2d0}{Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition}}.
+
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a065579e7d73876689b1206641a5e1173}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a065579e7d73876689b1206641a5e1173} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!recognize\_speech\_audio\_path@{recognize\_speech\_audio\_path}}
+\index{recognize\_speech\_audio\_path@{recognize\_speech\_audio\_path}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{recognize\_speech\_audio\_path()}{recognize\_speech\_audio\_path()}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+recognize\+\_\+speech\+\_\+audio\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{audio\+\_\+file\+\_\+path,  }\item[{str}]{lang = {\ttfamily \textquotesingle{}ru-\/RU\textquotesingle{}},  }\item[{str}]{topic = {\ttfamily \textquotesingle{}general\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Распознавание речи из аудиофайла по пути.
+@param audio_file_path Путь к аудиофайлу.
+@param lang Язык распознавания (по умолчанию 'ru-RU').
+@param topic Тема распознавания (по умолчанию 'general').
+@return Строка с распознанным текстом или сообщение об ошибке.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!folder\_id@{folder\_id}}
+\index{folder\_id@{folder\_id}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{folder\_id}{folder\_id}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+folder\+\_\+id}
+
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!iam\_token@{iam\_token}}
+\index{iam\_token@{iam\_token}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{iam\_token}{iam\_token}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+iam\+\_\+token}
+
+\Hypertarget{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693}\label{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693} 
+\index{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}!service\_secret\_key@{service\_secret\_key}}
+\index{service\_secret\_key@{service\_secret\_key}!AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex@{AutomaticSpeechRecognitionYandex.AutomaticSpeechRecognitionYandex}}
+\doxysubsubsection{\texorpdfstring{service\_secret\_key}{service\_secret\_key}}
+{\footnotesize\ttfamily Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex.\+service\+\_\+secret\+\_\+key}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AutomaticSpeechRecognitionYandex_8py}{Automatic\+Speech\+Recognition\+Yandex.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\doxysection{Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition Class Reference}
+\hypertarget{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition}{}\label{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition}\index{AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}}
+
+
+Inheritance diagram for Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a41bc3358af5c551b28ee897e4fdac5a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51}{folder\+\_\+id}}, str \mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a6c315f310a3fa31e66d1bf7bec1a6d13}{log\+\_\+file}}, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11}{iam\+\_\+token}}=None, str \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693}{service\+\_\+secret\+\_\+key}}=None)
+\item 
+\mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a4881938f6617592bb79b67c8f7ceb132}{log\+\_\+recognized\+\_\+text}} (self, str text)
+\item 
+\mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_af04876025a99ded186249c827c99d2d0}{recognize\+\_\+speech\+\_\+audio\+\_\+data}} (self, any audio\+\_\+data, str lang=\textquotesingle{}ru-\/RU\textquotesingle{}, str topic=\textquotesingle{}general\textquotesingle{}, bool print\+\_\+result=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex}{Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a1dbdc6826167967e928e1d2e32f42cc4}{detect\+\_\+audio\+\_\+format\+\_\+by\+\_\+name}} (self, audio\+\_\+data)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aa692cdf5d45bac69ccce555dc8acb02f}{detect\+\_\+audio\+\_\+format}} (self, file\+\_\+content)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_adaee2d47f6318f4584529b992f4df8be}{convert\+\_\+audio\+\_\+to\+\_\+bytes}} (self, audio\+\_\+data)
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a065579e7d73876689b1206641a5e1173}{recognize\+\_\+speech\+\_\+audio\+\_\+path}} (self, str audio\+\_\+file\+\_\+path, str lang=\textquotesingle{}ru-\/RU\textquotesingle{}, str topic=\textquotesingle{}general\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a6c315f310a3fa31e66d1bf7bec1a6d13}{log\+\_\+file}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex}{Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_aad050831896ec1b98771a17e6ca71c51}{folder\+\_\+id}}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a006fbfc43d510474b1a3870118ff2e11}{iam\+\_\+token}}
+\item 
+\mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a8f28e6cfac65f54e05a54a32eb514693}{service\+\_\+secret\+\_\+key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@class AdvancedSpeechRecognition
+@brief Производный класс для расширенного распознавания речи.
+@details Наследуется от AutomaticSpeechRecognitionYandex, добавляя возможность логирования распознанного текста.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a41bc3358af5c551b28ee897e4fdac5a0}\label{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a41bc3358af5c551b28ee897e4fdac5a0} 
+\index{AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{folder\+\_\+id,  }\item[{str}]{log\+\_\+file,  }\item[{str }]{iam\+\_\+token = {\ttfamily None},  }\item[{str }]{service\+\_\+secret\+\_\+key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Инициализация объекта AdvancedSpeechRecognition.
+@param folder_id Идентификатор папки в Yandex Cloud.
+@param log_file Путь к файлу для логирования распознанного текста.
+@param iam_token Токен IAM для аутентификации (опционально).
+@param service_secret_key Секретный ключ сервиса (опционально).
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a814b5ce41700f28643904e076f8484fb}{Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a4881938f6617592bb79b67c8f7ceb132}\label{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a4881938f6617592bb79b67c8f7ceb132} 
+\index{AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}!log\_recognized\_text@{log\_recognized\_text}}
+\index{log\_recognized\_text@{log\_recognized\_text}!AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}}
+\doxysubsubsection{\texorpdfstring{log\_recognized\_text()}{log\_recognized\_text()}}
+{\footnotesize\ttfamily Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition.\+log\+\_\+recognized\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Логирование распознанного текста в файл.
+@param text Текст для записи в лог.
+\end{DoxyVerb}
+ \Hypertarget{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_af04876025a99ded186249c827c99d2d0}\label{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_af04876025a99ded186249c827c99d2d0} 
+\index{AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}!recognize\_speech\_audio\_data@{recognize\_speech\_audio\_data}}
+\index{recognize\_speech\_audio\_data@{recognize\_speech\_audio\_data}!AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}}
+\doxysubsubsection{\texorpdfstring{recognize\_speech\_audio\_data()}{recognize\_speech\_audio\_data()}}
+{\footnotesize\ttfamily Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition.\+recognize\+\_\+speech\+\_\+audio\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{any}]{audio\+\_\+data,  }\item[{str }]{lang = {\ttfamily \textquotesingle{}ru-\/RU\textquotesingle{}},  }\item[{str }]{topic = {\ttfamily \textquotesingle{}general\textquotesingle{}},  }\item[{bool }]{print\+\_\+result = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Распознавание речи с логированием результата.
+@param audio_data Аудиоданные для распознавания.
+@param lang Язык распознавания (по умолчанию 'ru-RU').
+@param topic Тема распознавания (по умолчанию 'general').
+@param print_result Флаг для вывода результата в консоль.
+@return Строка с распознанным текстом или сообщение об ошибке.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classAutomaticSpeechRecognitionYandex_1_1AutomaticSpeechRecognitionYandex_a490862388bab0300fe1017eeb4a6aae3}{Automatic\+Speech\+Recognition\+Yandex.\+Automatic\+Speech\+Recognition\+Yandex}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a6c315f310a3fa31e66d1bf7bec1a6d13}\label{classAdvancedSpeechRecognition_1_1AdvancedSpeechRecognition_a6c315f310a3fa31e66d1bf7bec1a6d13} 
+\index{AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}!log\_file@{log\_file}}
+\index{log\_file@{log\_file}!AdvancedSpeechRecognition.AdvancedSpeechRecognition@{AdvancedSpeechRecognition.AdvancedSpeechRecognition}}
+\doxysubsubsection{\texorpdfstring{log\_file}{log\_file}}
+{\footnotesize\ttfamily Advanced\+Speech\+Recognition.\+Advanced\+Speech\+Recognition.\+log\+\_\+file}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AdvancedSpeechRecognition_8py}{Advanced\+Speech\+Recognition.\+py}}\end{DoxyCompactItemize}
